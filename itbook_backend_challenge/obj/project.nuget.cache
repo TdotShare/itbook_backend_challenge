@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "d0JArAszty+oPQKbEWGrROSMSrsKwl68yne2ET/Hhmw59NzPZBl/MuR9/sPKt713pA21sx4A1fmzmQWusmqGNw==",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\dotnet\\itbook_backend_challenge\\itbook_backend_challenge\\itbook_backend_challenge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tdot\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\tdot\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\tdot\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\tdot\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\tdot\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\tdot\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
