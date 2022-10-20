@@ -3,6 +3,6 @@
     public class LikeBookUser
     {
         public int user_id { get; set; }
-        public Int64 book_id { get; set; }
+        public long book_id { get; set; }
     }
 }

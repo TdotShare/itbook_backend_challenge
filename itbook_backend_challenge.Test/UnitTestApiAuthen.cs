@@ -1,3 +1,4 @@
+using itbook_backend_challenge.Mapdata.Formactions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Newtonsoft.Json;
 using System;
@@ -9,13 +10,14 @@ namespace itbook_backend_challenge.Test
     [TestClass]
     public class UnitTestApiAuthen
     {
+
         [TestMethod]
         public async Task Test_Login_User_Success()
         {
             await using var application = new WebApplicationFactory<Program>();
             var httpClient = application.CreateDefaultClient();
 
-            var data = new
+            var data = new LoginUser
             {
                 username = "jirayu.co",
                 password = "123"
@@ -35,7 +37,7 @@ namespace itbook_backend_challenge.Test
             await using var application = new WebApplicationFactory<Program>();
             var httpClient = application.CreateDefaultClient();
 
-            var data = new
+            var data = new LoginUser
             {
                 username = "jirayu.co",
                 password = "1234"
@@ -54,7 +56,7 @@ namespace itbook_backend_challenge.Test
             await using var application = new WebApplicationFactory<Program>();
             var httpClient = application.CreateDefaultClient();
 
-            var data = new
+            var data = new RegisUser
             {
                 username = $"jirayu.test.{DateTime.Now.ToString("mmss")}",
                 password = "1234",
@@ -74,7 +76,7 @@ namespace itbook_backend_challenge.Test
             await using var application = new WebApplicationFactory<Program>();
             var httpClient = application.CreateDefaultClient();
 
-            var data = new
+            var data = new RegisUser
             {
                 username = $"jirayu.test.{DateTime.Now.ToString("mmss")}",
                 password = "1234",

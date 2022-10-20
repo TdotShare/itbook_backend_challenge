@@ -39,6 +39,17 @@ namespace itbook_backend_challenge.Controllers
 
             try
             {
+
+
+                using var httpClient = new HttpClient();
+                var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.itbook.store/1.0/books/{likebook_user.book_id}");
+                var response = httpClient.Send(request);
+
+                if (response.StatusCode.ToString() != "OK")
+                {
+                    return BadRequest(new { Message = "Not Found Data !" });
+                }
+
                 var db = new LibraryContext();
 
                 var likebook_user_data = new Favor
