@@ -66,7 +66,7 @@ namespace itbook_backend_challenge.Controllers
 
                 if (chk_user > 0)
                 {
-                    return Ok(new { Message = $"This account name = {resgis_user.username} already in the system" });
+                    return BadRequest(new { Message = $"This account name = {resgis_user.username} already in the system" });
                 }
 
  
