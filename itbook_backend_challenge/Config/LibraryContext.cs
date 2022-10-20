@@ -11,7 +11,7 @@ namespace itbook_backend_challenge.Config
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost;database=itbook_test;user=root;password=''");
+            optionsBuilder.UseMySQL("server=localhost;database=itbook_test;user=root;password=''" );
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

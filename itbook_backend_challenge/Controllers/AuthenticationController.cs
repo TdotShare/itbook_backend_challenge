@@ -9,6 +9,14 @@ namespace itbook_backend_challenge.Controllers
 {
     public class AuthenticationController : Controller
     {
+
+        private readonly JwtAuthenticationManager jwtAuthenticationManager;
+        public AuthenticationController(JwtAuthenticationManager jwtAuthenticationManager)
+        {
+            this.jwtAuthenticationManager = jwtAuthenticationManager;
+        }
+
+
         [HttpPost("login")]
         public IActionResult ActionLogin([FromBody] LoginUser login_user)
         {
@@ -21,21 +29,22 @@ namespace itbook_backend_challenge.Controllers
                 {
                     if (Crypto.VerifyHashedPassword(user_data.user_password , login_user.password))
                     {
-                        return Ok(user_data);
+                        var user_token_data = jwtAuthenticationManager.Authenticate(user_data);
+                        return Ok(user_token_data);
                     }
                     else
                     {
-                        return BadRequest("password is incorrect");
+                        return BadRequest(new { Message = "password is incorrect" });
                     }
                 }
 
-                return BadRequest("Username is incorrect");
+                return BadRequest(new { Message = "Username is incorrect" });
 
 
             }
             catch(Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest(new { Message = e.Message });
             }
         }
 
@@ -57,7 +66,7 @@ namespace itbook_backend_challenge.Controllers
 
                 if (chk_user > 0)
                 {
-                    return Ok($"This account name = {resgis_user.username} already in the system");
+                    return Ok(new { Message = $"This account name = {resgis_user.username} already in the system" });
                 }
 
  
@@ -71,12 +80,12 @@ namespace itbook_backend_challenge.Controllers
                 db.User.Add(resgis_user_data);
                 db.SaveChanges();
 
-                return Ok($"create account name = {resgis_user.username}");
+                return Ok(new { Message = $"create account name = {resgis_user.username}" } );
 
             }
             catch(Exception e)
             {
-                return BadRequest(e.Message);
+                return BadRequest(new { Message = e.Message });
             }
         }
     }

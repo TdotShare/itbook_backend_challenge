@@ -55,3 +55,10 @@ D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net
 D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\System.Web.WebPages.dll
 D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Coding\dotnet\itbook_backend_challenge\itbook_backend_challenge\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -8,6 +8,6 @@
 
         public string next_page { get; set; }
         public string previous_page { get; set; }
-        public Models.Book []books { get; set; }
+        public Models.Book? []? books { get; set; }
     }
 }
