@@ -1,6 +1,6 @@
 # itbook_backend_challenge
 
-สร้างขึ้นโดยใช้ .net 6 api
+![Screenshot](itbook_system.png)
 
 # เครื่องมือที่ใช้พัฒนาระบบ
   -  MySql
