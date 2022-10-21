@@ -7,8 +7,11 @@
   - .NET 6 Core Web API
 
 # package ที่ใช้ในระบบ 
-  - [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer)
-  - [MySql.EntityFrameworkCore](https://www.nuget.org/packages/MySql.EntityFrameworkCore)
+  itbook_backend_challenge
+    - [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer)
+    - [MySql.EntityFrameworkCore](https://www.nuget.org/packages/MySql.EntityFrameworkCore)
+  itbook_backend_challenge.Test
+    - [Microsoft.AspNetCore.Mvc.Testing](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Testing)
 
 # ขั้นตอนการรัน
   - [Download and install Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
