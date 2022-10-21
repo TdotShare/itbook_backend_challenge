@@ -14,6 +14,6 @@
   - [Download and install Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
   - Configure Git to your Visual Studio
   - Clone a Git Repository [itbook_backend_challenge](https://github.com/TdotShare/itbook_backend_challenge)
-  - Download File Database_Itbook.sql import database(xampp phpmyadmin)
+  - Download File Database Itbook_test.sql import database(xampp phpmyadmin)
   - Config connection database to path [/Config/LibraryContext.cs](https://github.com/TdotShare/itbook_backend_challenge/blob/main/itbook_backend_challenge/Config/LibraryContext.cs)
   - Open Project And F5 Start Debugging
