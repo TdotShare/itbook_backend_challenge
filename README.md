@@ -11,4 +11,7 @@
   - MySql.EntityFrameworkCore
 
 # ขั้นตอนการรัน
-  - 
+  - [Download and install Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
+  - Configure Git to your Visual Studio
+  - Clone a Git Repository
+  - Open Project And F5 Start Debugging
