@@ -7,8 +7,7 @@ namespace itbook_backend_challenge.Controllers
 {
     public class BookController : Controller
     {
-        [Authorize]
-        [HttpGet("books")]
+        [HttpGet("books") , Authorize]
         public async Task<IActionResult> ActionBookList(int? page = 0)
         {
             using var httpClient = new HttpClient();

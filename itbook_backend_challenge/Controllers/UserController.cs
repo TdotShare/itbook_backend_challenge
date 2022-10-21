@@ -3,13 +3,14 @@ using itbook_backend_challenge.Mapdata.Formactions;
 using itbook_backend_challenge.Mapdata.Models;
 using itbook_backend_challenge.Config;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.Net.Http.Headers;
 
 namespace itbook_backend_challenge.Controllers
 {
     public class UserController : Controller
     {
-        [Authorize]
-        [HttpGet("user") ]
+        [HttpGet("user") , Authorize]
         public IActionResult Index()
         {
 
@@ -32,8 +33,21 @@ namespace itbook_backend_challenge.Controllers
             }
 
         }
-        [Authorize]
-        [HttpPost("user/like")]
+
+        [HttpGet("user/getme") , Authorize]
+        public IActionResult ActionMe()
+        {
+            //var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Replace("Bearer ", "");
+
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            var username =  new { 
+              username = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value
+            };
+
+            return Ok(username);
+        }
+
+        [HttpPost("user/like") , Authorize]
         public IActionResult ActionLikeBook([FromBody]LikeBookUser likebook_user)
         {
 
