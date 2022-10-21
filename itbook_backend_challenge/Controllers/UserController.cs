@@ -13,7 +13,6 @@ namespace itbook_backend_challenge.Controllers
         [HttpGet("user") , Authorize]
         public IActionResult Index()
         {
-
             try
             {
                 var db = new LibraryContext();
@@ -31,7 +30,6 @@ namespace itbook_backend_challenge.Controllers
             {
                 return BadRequest(new { Message = e.Message });
             }
-
         }
 
         [HttpGet("user/getme") , Authorize]
@@ -53,8 +51,6 @@ namespace itbook_backend_challenge.Controllers
 
             try
             {
-
-
                 using var httpClient = new HttpClient();
                 var request = new HttpRequestMessage(HttpMethod.Get, $"https://api.itbook.store/1.0/books/{likebook_user.book_id}");
                 var response = httpClient.Send(request);
