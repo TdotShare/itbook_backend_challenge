@@ -62,6 +62,13 @@ namespace itbook_backend_challenge.Controllers
 
                 var db = new LibraryContext();
 
+                var user_data = db.User.Find(likebook_user.user_id);
+
+                if (user_data == null)
+                {
+                    return BadRequest(new { Message = "Not Found Data User !" });
+                }
+
                 var likebook_user_data = new Favor
                 {
                     favor_user_id = likebook_user.user_id,
